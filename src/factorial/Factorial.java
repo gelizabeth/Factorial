@@ -27,12 +27,11 @@ public class Factorial {
     
     public static int inverseFactorial(BigInteger number) {
         
-        BigInteger factorial = number; 
         int n = 1;
         
-        while (factorial.compareTo(BigInteger.ONE)==1){
+        while (number.compareTo(BigInteger.ONE)==1){
             n++;
-            factorial = factorial.divide(BigInteger.valueOf(n));
+            number = number.divide(BigInteger.valueOf(n));
         }
     return n;
     }
